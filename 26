@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void main()
+{
+    int n=7,co;
+    for(int i=0;i<4;i++)
+    {
+      co=65;
+      for(int k=0;k<i;k++)
+    {
+        printf(" ");
+    }
+     
+     for(int j=0;j<n;j++)
+     {
+         printf("%c ",co);
+         co++;
+         if(co==69-i)
+          break;
+     }
+     for(int l=68-i-1;l>=65;l--)
+     {
+      printf("%c ",l);
+     }
+     n=n-2;
+     
+     printf("\n");
+     
+    }
+}
