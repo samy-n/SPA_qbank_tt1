@@ -1,0 +1,24 @@
+
+	
+#include<stdio.h>
+
+void main()
+{
+ int flag=1;
+ for(int i=0;i<5;i++)
+ {
+    for(int j=0;j<=i;j++)
+     {
+         if(flag==1||flag%2!=0)
+         printf("%c ",96+flag);
+         else
+         printf("%c ",64+flag);
+         
+         flag++;
+     }
+     printf("\n");
+     
+ }
+    
+}
+
