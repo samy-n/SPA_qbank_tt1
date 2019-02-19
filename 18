@@ -1,0 +1,34 @@
+    Program to check if entered number is Angstrom
+    
+    #include <stdio.h>
+    #include <math.h>
+     
+    void main()
+    {
+        int num,t,dig=0;
+        double sum=0;
+        printf("Enter number to check for Angstrom\n");
+        scanf("%d",&num);
+        t=num;
+        while(num>0)
+        {
+            num=num/10;
+            dig++;
+        
+        }
+   
+       num=t;
+       while(num>0)
+       {
+           int r=num%10;
+           sum=sum+pow(r,dig);
+           num=num/10;
+       }
+       if(sum==t)
+       printf("Entered number is Angstrom");
+       else
+       printf("Entered number is not Angstrom");
+       
+       
+    
+    }
