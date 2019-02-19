@@ -1,0 +1,27 @@
+Program to find LCM of two numbers a and b
+
+#include<stdio.h>
+
+void main()
+{
+ 
+ int a,b,lcm;
+ printf("Enter two numbers to find LCM\n");
+ scanf("%d %d",&a,&b);
+ if(a>b) //since we want greater number to always be b
+ {
+     int temp=a;
+     a=b;
+     b=temp;
+ 
+ }
+ for(int i=b;;i++)
+{
+ if(i%a==0&&i%b==0)
+ {
+   lcm=i;
+   break;
+ }
+}
+printf("%d", lcm);
+}
